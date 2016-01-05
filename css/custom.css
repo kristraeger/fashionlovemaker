@@ -1,8 +1,18 @@
+/* general */
 
-/*header */
+body {
+	font-family: "Muli", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+	color: #4939ed;
+}
+
+/* nav bar */
 
 .navbar {
 	border-radius: 0;
+	margin-bottom: 0;
 }
 
 .navbar-default {
@@ -13,6 +23,7 @@
 .navbar-brand>img {
 	height: 100%;
 	display: inline-block;
+	vertical-align: baseline;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -33,9 +44,10 @@
 	margin: 10%;
 }
 
-.overlay-text h2 {
-	font-family: "Maven Pro", sans-serif;
+.overlay-text h2, .contentSection h2 {
+	font-family: "Maven Pro", "Helvetica Neue",Helvetica, sans-serif;
 	color: white;
+	background-color: black;
 	font-weight: 400;
 	line-height: 2em;
 	font-size: 2.5em;
@@ -43,22 +55,33 @@
 	display: inline;
 }
 
-.overlay-text h2 {
-	background-color: black;
+.overlay-text a {
+	color: #4939ed;
 }
 
-.search-bar {
+.overlay-text a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.search-bar, .btn-sm {
 	font-family: "Maven Pro", sans-serif;
 }
 
-.btn-default:hover {
+.btn-sm {
+	border-color: #4939ed;
+	background-color: transparent;
+	color: white;
+}
+
+.btn-default:hover, .btn-sm:hover {
 	background-color: #4939ed;
 	color: white;
-	border-color: white;
+	border-color: transparent;
 }
 
 .fullscreen-bg {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -73,6 +96,38 @@
   left: 0;
   width: 100%;
 }
+
+.chevron-down {
+	text-align: center;
+	color: white;
+	font-size: 1.5em;
+}
+
+/* sections */
+
+section {
+	margin: 10%;
+}
+
+section .fa {
+	font-size: 1.5em;
+	vertical-align: super;
+}
+
+section#features {
+	padding: 3%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+#features1 {
+	padding-bottom: 15%;
+}
+
+.contentSection {
+	margin-bottom: 5%;
+}
+
 
 /*media rules*/
 
@@ -100,7 +155,12 @@
 }
 
 @media screen and (max-width: 768px) {
-	.overlay-text h2{
+
+	.overlay-text {
+		margin: 20% 10% 10% 10%;
+	}
+
+	.overlay-text h2, .contentSection h2 {
 		font-size: 1.5em;
 	}
 
@@ -111,6 +171,10 @@
 	.navbar-form {
 		-webkit-box-shadow: none;
 		box-shadow: none;
+	}
+
+	#features1 {
+		padding: 0;
 	}
 }
 
