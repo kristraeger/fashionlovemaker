@@ -148,16 +148,7 @@ footer {
 	background-color: black;
 	color: white;
 	min-height: 50px;
-}
-
-footer ul {
-	list-style-type: none;
-	display: inline-block;
-	padding: 0;
-}
-
-footer ul li {
-	display: inline-block;
+	padding: 18px 0;
 }
 
 footer a {
@@ -169,10 +160,37 @@ footer a:hover {
 	text-decoration: none;
 }
 
+#socialMedia .fa {
+	font-size: 1.5em;
+}
 
+footer .form-control {
+	font-size: 12px;
+	height: 30px;
+}
 
+footer .navbar-nav>li>a:hover {
+	background-color: black;
+}
+
+a#subscribeForm {
+ 	padding: 10px 0;
+ }
+
+#logoFooter {
+	text-align: center;
+	left: 35%;
+	padding: 5%;
+}
+
+.navbar-brand {
+	font-size: 10px;
+}
 
 /*media rules*/
+
+
+/*video*/
 
 @media (min-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
@@ -188,7 +206,9 @@ footer a:hover {
   }
 }
 
-@media screen and (min-width: 768px) {
+/*>iPad*/
+
+@media screen and (min-width: 769px) {
 	.navbar>.container-fluid .navbar-brand {
 		margin-left: 15px;
 	}
@@ -203,9 +223,14 @@ footer a:hover {
 	#signup-stylists .media-body {
 	display: inline-block;
 	width: 80%;
+	}
+
+	footer .navbar-form {
+	margin-top: 0;
+	}
 }
 
-}
+/*<=iPad*/
 
 @media screen and (max-width: 768px) {
 
@@ -224,6 +249,7 @@ footer a:hover {
 	.navbar-form {
 		-webkit-box-shadow: none;
 		box-shadow: none;
+		padding: 0;
 	}
 
 	#features1 {
@@ -231,7 +257,39 @@ footer a:hover {
 	}
 
 	.contentSection {
-		margin-top: 10%;
+		margin-top: 5%;
 	}
+
+	#carousel-stylists {
+		top: 30px;
+	}
+
+	.bg-box {
+		width: 95%;
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0;
+	}
+
+	footer {
+		font-size: 12px;
+	}
+
+	footer .navbar-nav>li>a {
+		padding-bottom: 5px;
+	}
+
+	#subscribe a {
+		padding-left: 0;
+	}
+
+
+ 
+}
+
+/*<=iPhone5*/
+
+@media screen and (max-width: 321px) {
+
 }
 
