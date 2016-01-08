@@ -159,6 +159,9 @@ footer a:hover {
 	color: #4939ed;
 	text-decoration: none;
 }
+ #text:hover {
+ 	color: white;
+ }
 
 #socialMedia .fa {
 	font-size: 1.5em;
@@ -177,15 +180,18 @@ a#subscribeForm {
  	padding: 10px 0;
  }
 
-#logoFooter {
-	text-align: center;
-	left: 35%;
-	padding: 5%;
+#logoFooter img {
+	height: 20px;
 }
 
-.navbar-brand {
+#copy {
 	font-size: 10px;
 }
+
+#logoFooter, #copy {
+	text-align: center;
+}
+
 
 /*media rules*/
 
@@ -204,6 +210,16 @@ a#subscribeForm {
     width: 300%;
     left: -100%;
   }
+}
+
+/*narrow desktops*/
+
+@media screen and (max-width: 989px) {
+	.overlay-text {
+		margin: 15% 10% 10% 5%;
+	}
+
+
 }
 
 /*>iPad*/
@@ -233,10 +249,10 @@ a#subscribeForm {
 /*<=iPad*/
 
 @media screen and (max-width: 768px) {
-
 	.overlay-text {
 		margin: 20% 10% 10% 10%;
 	}
+	
 
 	.overlay-text h2, .contentSection h2 {
 		font-size: 1.5em;
@@ -249,7 +265,7 @@ a#subscribeForm {
 	.navbar-form {
 		-webkit-box-shadow: none;
 		box-shadow: none;
-		padding: 0;
+		padding-left: 1px;
 	}
 
 	#features1 {
@@ -283,13 +299,48 @@ a#subscribeForm {
 		padding-left: 0;
 	}
 
+	#menu {
+		width: 20%;
+		float: right;
+	}
+
+	#subscribe {
+		margin-left: 4%;
+	}
+
 
  
+}
+
+/*<=iPhone6S*/
+
+@media screen and (max-width: 768px) {
+	.navbar-form {
+		padding-left: 15px;
+	}
+
+	#carousel-stylists {
+		top: 0;
+	}
+
+	#subscribe {
+		margin-left: 0;
+		width: 36%;
+	}
+
+	#menu {
+		padding-left: 0;
+		padding-right:0;
+	}
+
 }
 
 /*<=iPhone5*/
 
 @media screen and (max-width: 321px) {
+	footer {
+		font-size: 10px;
+	}
 
 }
 
