@@ -246,8 +246,8 @@ a#subscribeForm {
 	}
 }
 
-/*<=iPad*/
 
+/*<=iPad*/
 @media screen and (max-width: 768px) {
 	.overlay-text {
 		margin: 20% 10% 10% 10%;
@@ -307,14 +307,35 @@ a#subscribeForm {
 	#subscribe {
 		margin-left: 4%;
 	}
-
-
- 
 }
+
+/*no greater than ipad but bigger than iphone 6spx*/
+
+@media (max-width: 768px) and (min-width: 414px) {
+	.navbar-form {
+		padding-left: 15px;
+	}
+}
+
+/*<=iphone 6S plus*/
+
+@media screen and (max-width: 623px) {
+
+	.overlay {
+		padding-top: 150px;
+	}
+
+}
+
 
 /*<=iPhone6S*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 414px) {
+	.overlay {
+		padding-top: 60px;
+	}
+	
+
 	.navbar-form {
 		padding-left: 15px;
 	}
@@ -333,11 +354,16 @@ a#subscribeForm {
 		padding-right:0;
 	}
 
+	footer .form-control {
+		font-size: 8px;
+	}
+
 }
 
 /*<=iPhone5*/
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 322px) {
+
 	footer {
 		font-size: 10px;
 	}
