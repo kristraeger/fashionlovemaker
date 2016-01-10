@@ -280,6 +280,11 @@ a#subscribeForm {
 		top: 30px;
 	}
 
+	.fade-slow h2 {
+		opacity: 0.5;
+
+	}
+
 	.bg-box {
 		width: 95%;
 		padding-left: 0;
