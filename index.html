@@ -77,13 +77,13 @@
 			        <li><a href="#"><i class="fa fa-laptop"></i> Meet online</a></li>
 			        <li><a href="#"><i class="fa fa-search-plus"></i> Advanced search</a></li>
 			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-home"></i> My Account <span class="caret"></span></a>
 			          <ul class="dropdown-menu">
-			            <li><a href="#">Profile</a></li>
-			            <li><a href="#">Inbox</a></li>
-			            <li><a href="#">Settings</a></li>
+			            <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+			            <li><a href="#"><i class="fa fa-inbox"></i> Inbox</a></li>
+			            <li><a href="#"><i class="fa fa-user"></i> Settings</a></li>
 			            <li role="separator" class="divider"></li>
-			            <li><a href="#">Sign Out</a></li>
+			            <li><a href="#"><i class="fa fa-sign-out"></i> Sign Out</a></li>
 			          </ul>
 			        </li>
 			      </ul>
@@ -139,7 +139,7 @@
 							        ...
 							      </div>
 							      <div class="modal-footer">
-							        <button type="button" class="btn btn-default" data-dismiss="modal">got it!</button>
+							        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-lightbulb-o"></i> got it!</button>
 							      </div>
 							    </div>
 							  </div>
@@ -439,26 +439,59 @@
 		      		<div class="footerBox col-xs-3" id="menu">
 						<ul class="nav navbar-nav navbar-right">
 					        <li><a href="#"><i class="fa fa-list"></i> FAQ</a></li>
-					        <li><a href="mailto:kristina@traeger.co"><i class="fa fa-envelope-o"></i> Contact</a></li>
 					        <li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
+					        <li><a data-toggle="modal" data-target="#contactModal"><i class="fa fa-envelope-o"></i> Contact</a></li>
 					     </ul>
 					</div>					
 				</div>
 			</div>
+
+			<!-- footer logo + website -->
 		
-				<div class="center-block" id="logoFooter">
-					<img alt="Logo" src="img/logo_white2.png">
-				</div>
-				<div class="center-block" id="copy">
-					<a href="http://kristinatraeger.com/" target="_blank">
-		        		&copy; 2016 www.kristinatraeger.com
-		      		</a>
-		      	</div>
+			<div class="center-block" id="logoFooter">
+				<img alt="Logo" src="img/logo_white2.png">
+			</div>
+			<div class="center-block" id="copy">
+				<a href="http://kristinatraeger.com/" target="_blank">
+	        		&copy; 2016 www.kristinatraeger.com
+	      		</a>
+	      	</div>
 				
 		</div> <!--end container fluid-->
 		
 	</footer>
 
+	<!-- ContactModal -->
+
+	<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="contactModalLabel">we <i class="fa fa-gratipay"></i>  to hear from you!</h4>
+	      </div>
+
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	            <label for="recipient-name" class="control-label">recipient:</label>
+	            <input type="text" class="form-control" id="recipient-name" placeholder="info@fashionlovemaker.com">
+	          </div>
+	          <div class="form-group">
+	            <label for="message-text" class="control-label">message:</label>
+	            <textarea class="form-control" id="message-text"></textarea>
+	          </div>
+	        </form>
+	      </div>
+
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default"><i class="fa fa-envelope"></i> send</button>
+	      </div>
+
+	    </div>
+	  </div>
+	</div>
 
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
