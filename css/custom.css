@@ -34,13 +34,24 @@ a:hover {
 	color: white;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover, .navbar-nav>li>a:focus, .navbar-nav>li>a:active, .dropdown:active{
 	color: #4939ed;
+	background-color:transparent;
 }
 
 .navbar-default .navbar-toggle:hover {
 	background-color: #4939ed;
 }
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .nav> {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color: transparent;
+	color: #4939ed;
+}
+
 
 /*video*/
 
@@ -190,6 +201,10 @@ a#subscribeForm {
 
 #logoFooter, #copy {
 	text-align: center;
+}
+
+nav>li>a:focus, nav>li>a:visited, nav>li>a:active {
+	background-color: transparent;
 }
 
 
