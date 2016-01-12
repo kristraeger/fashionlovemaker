@@ -185,6 +185,7 @@ footer .form-control {
 
 footer .navbar-nav>li>a:hover {
 	background-color: black;
+	cursor: pointer;
 }
 
 a#subscribeForm {
