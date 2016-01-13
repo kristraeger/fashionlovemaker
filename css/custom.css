@@ -4,7 +4,7 @@ body {
 	font-family: "Muli", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-a {
+a, .focus-nav {
 	color: #4939ed;
 }
 
