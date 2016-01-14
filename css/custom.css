@@ -118,7 +118,7 @@ a:hover {
 	font-size: 2.5em;
 }
 
-/* sections */
+/* sections home page */
 
 section {
 	margin: 10%;
@@ -208,6 +208,19 @@ nav>li>a:focus, nav>li>a:visited, nav>li>a:active {
 	background-color: transparent;
 }
 
+/* about */
+
+.banner {
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#aboutHeader {
+	background-image: url("../img/about_header.jpg");
+	background-position-y: -50px;
+}
 
 /*media rules*/
 
